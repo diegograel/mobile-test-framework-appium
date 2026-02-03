@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class TestCases {
+public class tests {
 
     static AppiumDriver driver;
 
@@ -24,31 +24,31 @@ public class TestCases {
 
     @Test
     public void appStart() {
-        Functions.startAppAsGuest();
+        actions.startAppAsGuest();
     }
 
     @Test(dependsOnMethods = "appStart")
     public void searchItem() {
-        Functions.itemSearch();
+        actions.itemSearch();
     }
 
     @Test(dependsOnMethods = "searchItem")
     public void addingItemToCart() {
-        Functions.addItemToCart();
+        actions.addItemToCart();
     }
 
     @Test(dependsOnMethods = "addingItemToCart")
     public void changingItemQuantity() {
-        Functions.changeItemQuantity();
+        actions.changeItemQuantity();
     }
 
     @Test(dependsOnMethods = "changingItemQuantity")
     public void removingItemFromCart() {
-        Functions.removeItemFromCart();
+        actions.removeItemFromCart();
     }
 
     @AfterClass
     public void tearDown() {
-        Functions.finishTest();
+        actions.finishTest();
     }
 }

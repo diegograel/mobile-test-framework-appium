@@ -5,7 +5,7 @@ import org.openqa.selenium.interactions.Sequence;
 import java.time.Duration;
 import java.util.Collections;
 
-public class scrollFunction extends TestCases {
+public class utils extends tests {
 
     public static void swipeUp(AppiumDriver driver) {
         Dimension size = driver.manage().window().getSize();

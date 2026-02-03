@@ -2,7 +2,7 @@
 <suite name="AndroidSample" verbose="1" parallel="false">
     <test name="AndroidSample">
         <classes>
-            <class name="TestCases">
+            <class name="tests">
                 <methods>
                     <include name="appStart" />
                     <include name="searchItem" />

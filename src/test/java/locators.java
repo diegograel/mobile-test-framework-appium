@@ -1,7 +1,7 @@
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
-public class Locators extends Functions {
+public class locators extends actions {
 
     //Texts
     public static final By WELCOME_TITLE = AppiumBy.androidUIAutomator("new UiSelector().text(\"Welcome!\")");
